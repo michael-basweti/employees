@@ -20,6 +20,10 @@ public class EmployeeRequest {
     private String email;
 
 
+    public EmployeeRequest() {
+    }
+
+
     public EmployeeRequest(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
