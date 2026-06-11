@@ -2,6 +2,7 @@ package com.mbasweti.springboot.employees.dao;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.mbasweti.springboot.employees.entity.Employee;
@@ -14,6 +15,7 @@ public class EmployeeDAOJpaImplementation implements EmployeeDAO {
 
     private EntityManager entityManager;
 
+    @Autowired
     public EmployeeDAOJpaImplementation(EntityManager theEntityManager) {
         this.entityManager = theEntityManager;
     }
