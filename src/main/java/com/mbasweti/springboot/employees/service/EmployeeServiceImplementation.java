@@ -56,6 +56,7 @@ public class EmployeeServiceImplementation implements EmployeeService {
         return theEmployee;
     }
 
+    @Transactional
     @Override
     public void deleteById(long theId) {
         employeeDAO.deleteById(theId);
