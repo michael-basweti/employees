@@ -10,7 +10,7 @@ public interface EmployeeService {
 
     List<Employee> findAll();
 
-    Employee findById(int theId);
+    Employee findById(long theId);
 
     Employee save(EmployeeRequest theEmployeeRequest);
 
@@ -18,6 +18,6 @@ public interface EmployeeService {
 
     Employee convertToEmployee(long id, EmployeeRequest theEmployeeRequest);
 
-    void deleteById(int theId);
+    void deleteById(long theId);
 
 }

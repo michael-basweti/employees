@@ -24,7 +24,7 @@ public class EmployeeServiceImplementation implements EmployeeService {
     }
 
     @Override
-    public Employee findById(int theId) {
+    public Employee findById(long theId) {
         Employee theEmployee = employeeDAO.findById(theId);
         
         return theEmployee;
@@ -57,7 +57,7 @@ public class EmployeeServiceImplementation implements EmployeeService {
     }
 
     @Override
-    public void deleteById(int theId) {
+    public void deleteById(long theId) {
         employeeDAO.deleteById(theId);
     }
 

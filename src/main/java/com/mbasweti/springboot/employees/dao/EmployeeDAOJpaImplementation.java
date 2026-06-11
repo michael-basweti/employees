@@ -33,7 +33,7 @@ public class EmployeeDAOJpaImplementation implements EmployeeDAO {
     }
 
      @Override
-     public Employee findById(int theId) {
+     public Employee findById(long theId) {
         Employee theEmployee = entityManager.find(Employee.class, theId);
         return theEmployee;
      }
@@ -45,7 +45,7 @@ public class EmployeeDAOJpaImplementation implements EmployeeDAO {
      }
 
      @Override
-     public void deleteById(int theId) {
+     public void deleteById(long theId) {
         Employee theEmployee = entityManager.find(Employee.class, theId);
         entityManager.remove(theEmployee);
      }
